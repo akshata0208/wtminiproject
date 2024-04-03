@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhole Patil College of Engineering</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .main-content {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .about {
+            text-align: left;
+        }
+
+        .college-img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .courses {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .course {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            background-color: #add8e6; /* Light Blue */
+            border-radius: 10px;
+        }
+
+        .course p {
+            margin: 10px 0;
+            color: #ff1493; /* Pink */
+        }
+
+        .cta {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .author-info {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .author-info p {
+            margin: 5px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            text-decoration: none;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dhole Patil College of Engineering</h1>
+        <p>Empowering Minds, Shaping Futures</p>
+    </header>
+
+    <section class="main-content">
+        <h2>About Us</h2>
+        <div class="about">
+            <p>Welcome to Dhole Patil College of Engineering, a leading institution committed to academic excellence
+                and holistic development of students. We take pride in providing quality education and fostering a
+                culture of innovation and research.</p>
+        </div>
+
+        <img src="https://dpcoepune.edu.in/wp-content/uploads/2019/12/college.jpg" class="college-img">
+
+        <h2>Our Courses</h2>
+        <div class="courses">
+            <div class="course">
+                <p>Computer Engineering</p>
+            </div>
+            <div class="course">
+                <p>Mechanical Engineering</p>
+            </div>
+            <div class="course">
+                <p>Electrical Engineering</p>
+            </div>
+            <div class="course">
+                <p>Civil Engineering</p>
+            </div>
+            <!-- Add more courses as needed -->
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Admissions Open!</h2>
+        <p>Apply now and embark on a journey of knowledge and discovery.</p>
+        <button class="btn" onclick="applyNow()">Apply Now</button>
+    </section>
+
+    <footer class="footer">
+        <div class="author-info">
+            <p>Author: Akshata Rathod</p>
+            <p>Roll No: 79</p>
+            <p>Email: <a href="mailto:akshatarathod122@gmail.com">akshatarathod122@gmail.com</a></p>
+        </div>
+        <p>&copy; 2024 Dhole Patil College of Engineering. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function applyNow() {
+            var contactNumber = prompt("Please enter your contact number:");
+            if (contactNumber !== null && contactNumber !== "") {
+                alert("Thank you for applying! We will contact you at " + contactNumber + ".");
+            } else {
+                alert("Invalid contact number. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
